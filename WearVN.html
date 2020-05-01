@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
 
 
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -18,62 +19,65 @@
 	</head>
 	<body>
 		<div class="container-fluid">
+
 			<!-- Header -->
-			<header style="background-color: black; color: white; font-size: 13px; font-weight: 400; padding: 10px 0px 0px 70px; font-family: Roboto; border-bottom: 1px solid grey;">
+			<header>
 				<div class="row">
 					<div class="col-md-7">
-					<span>Mở cửa: 8h30 - 22h00, thứ 2 - CN hàng tuần</span>
-				</div>	
-				<div class="col-md-5" style="padding-left: 200px;">
-					<ul style="list-style-type: none;">
-						<li style="display: inline-block;"><span class="glyphicon">&#xe008;</span> Tài khoản</li>
-						<li style="display: inline-block;"><span class="glyphicon">&#xe062;</span> Hệ thống cửa hàng</li>
-					</ul>
-				</div>
+						<span>Mở cửa: 8h30 - 22h00, thứ 2 - CN hàng tuần</span>
+					</div>	
+					<div class="col-md-5 class1">
+						<ul class="inline-block">
+							<li><a class="client" href="#"><span class="glyphicon">&#xe008;</span> Tài khoản</a></li>
+							<li><a class="client" href="#"><span class="glyphicon">&#xe062;</span> Hệ thống cửa hàng</a></li>
+						</ul>
+					</div>
 				</div>
 			</header>
 
 			<!-- Logo & Searchbar  -->
-			<section style="background-color: black; padding: 20px 70px;">
-			<div class="row" >
-				<div class="col-md-3">
-					<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/logo.png?1587612533388" alt="logo">
-				</div>
-				<div class="col-md-5">
-					<div>
-						<form method="get">
-							<input style="width: 80%; height: 40px; padding: 0px 10px;" type="text" name="searchbar" placeholder="Bạn đang tìm sản phẩm nào...">
-							<button type="submit" style="padding: 8px 25px; background-color: orange; color: white;">
-			 					<span class="glyphicon">&#xe003;</span>
-							</button>	
-						</form>
+			<section class="class2">
+				<div class="row" >
+					<div class="col-md-3">
+						<a href="#"><img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/logo.png?1587612533388" alt="logo"></a>
+					</div>
+					<div class="col-md-5">
+						<div>
+							<form method="post">
+								<input class="searchbar" type="text" name="searchbar" placeholder="Bạn đang tìm sản phẩm nào...">
+								<button id= "submit" type="submit">
+				 					<span class="glyphicon">&#xe003;</span>
+								</button>	
+							</form>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<ul class="hotline_cart">
+							<li>
+								<ul class="inline-block">
+									<li>
+										<span class="glyphicon">&#xe182;</span>	
+									</li>
+									<li>
+										<div><a class="hotline client" href="tel:02477702777">02477702777</a></div>
+										<div class="pink">Hotline</div>	
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="inline-block">
+									<li>
+										<span class="glyphicon">&#xe116;</span>
+									</li>
+									<li>
+										<div id="count"><a href="#" class="client">(0) Sản phẩm</a></div>
+										<div class="pink">Giỏ hàng</div>	
+									</li>
+								</ul>
+							</li>
+						</ul>	
 					</div>
 				</div>
-				<div class="col-md-4">
-					<ul style="list-style-type: none;">
-						<li style="display: inline-block;">
-							<ul>
-								<li style="display: inline-block;">
-									<span style="color: white;" class="glyphicon">&#xe182;</span>	
-								</li>
-								<li  style="display: inline-block;">
-									<div><a style="text-decoration: none; font-weight: bold; color: white;" href="tel:02477702777">02477702777</a></div>
-									<div style="color: pink;">Hotline</div>	
-								</li>
-							</ul>
-						</li>
-						<li style="display: inline-block;">
-							<li style="display: inline-block;">
-									<span style="color: white;" class="glyphicon">&#xe116;</span>
-								</li>
-								<li  style="display: inline-block; color: white;">
-									<div style="font-weight: bold;">(0) Sản phẩm</div>
-									<div style="color: pink;">Giỏ hàng</div>	
-								</li>
-						</li>
-					</ul>	
-				</div>
-			</div>
 			</section>
 
 			<!-- Navigation -->
@@ -81,7 +85,7 @@
 			  	<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				    <ul class="navbar-nav">
 				    	<li class="nav-item dropdown">
-				    		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: orange; font-weight: bold;">
+				    		<a class="nav-link dropdown-toggle mainMenu" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				        		<span class="glyphicon">&#xe236;</span> DANH MỤC SẢN PHẨM
 				        	</a>
 				        	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -93,7 +97,7 @@
 			        		</div>
 				      	</li>
 				      	<li class="nav-item active">
-				        	<a class="nav-link" href="#" style="color: black;">HOME</a>
+				        	<a class="nav-link" href="#">HOME</a>
 				      	</li>
 				      	<li class="nav-item dropdown">
 				        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -172,13 +176,19 @@
 			  	</ol>
 			  	<div class="carousel-inner">
 			    	<div class="carousel-item active">
-			     		<img class="d-block w-100" src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/slider_1.png?1587612533388" alt="First slide">
+			     		<a href="#">
+			     			<img class="d-block w-100" src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/slider_1.png?1587612533388" alt="First slide">
+			     		</a>
 			    	</div>
 				    <div class="carousel-item">
-				      	<img class="d-block w-100" src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/slider_2.png?1587612533388" alt="Second slide">
+				    	<a href="#">
+				    		<img class="d-block w-100" src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/slider_2.png?1587612533388" alt="Second slide">	
+				    	</a>
 				    </div>
 				    <div class="carousel-item">
-				      	<img class="d-block w-100" src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/slider_3.png?1587612533388" alt="Third slide">
+				    	<a href="#">
+				    		<img class="d-block w-100" src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/slider_3.png?1587612533388" alt="Third slide">	
+				    	</a>
 				    </div>
 				</div>
 			  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -192,20 +202,28 @@
 			</div>
 
 			<!-- Pictures -->
-			<section style="padding: 20px 0px;">
+			<section id="pictures">
 				<div class="row">
 					<div class="col-md-4">
-						<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_1.png?1587809913456" alt="pic1">
+						<a href="#">
+							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_1.png?1587809913456" alt="pic1">	
+						</a>
 					</div>	
 					<div class="col-md-4">
-						<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_2.png?1587809913456" alt="pic2">
+						<a href="#">
+							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_2.png?1587809913456" alt="pic2">	
+						</a>	
 					</div>
 					<div class="col-md-4">
 						<div class=" row">
-							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_3.png?1587809913456" alt="pic3">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_3.png?1587809913456" alt="pic3">	
+							</a>
 						</div>	
 						<div class=" row">
-							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_4.png?1587809913456" alt="pic4">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_4.png?1587809913456" alt="pic4">	
+							</a>
 						</div>	
 					</div>
 				</div>
@@ -213,15 +231,18 @@
 
 			<!-- Content -->
 			<section>
-				<h2 style="text-align: center;">HOT DEAL GIÁ SỐC</h2>
+				<h2 id="hotdeal">HOT DEAL GIÁ SỐC</h2>
 				<div class="row">
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000d3hbka-5.jpg?v=1584451452000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000d3hbka-5.jpg?v=1584451452000" alt="vans">	
+								<div><b>Giày Vans Old Skool All Black</b></div>
+							</a>
 							<div class="tag-sale">
 								-71%		
 							</div>
-							<div><b>Giày Vans Old Skool All Black</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>						
 							<div>SKU: VN000D3HBKA</div>
 							<div class="class4"><b>500.000đ</b></div>	
 							<del>1.750.000đ</del>
@@ -229,11 +250,14 @@
 					</div>
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/e3ww-3.png?v=1552026642000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/e3ww-3.png?v=1552026642000" alt="vans">	
+								<div><b>Giày Vans Slip-On All White</b></div>
+							</a>
 							<div class="tag-sale">
 								-66%		
 							</div>
-							<div><b>Giày Vans Slip-On All White</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>							
 							<div>SKU: VN000EYEW00</div>
 							<div class="class4"><b>500.000đ</b></div>	
 							<del>1.450.000đ</del>
@@ -241,11 +265,14 @@
 					</div>
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/bww-6.png?v=1552025016000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/bww-6.png?v=1552025016000" alt="vans">	
+								<div><b>Giày Vans Slip-On Checkerboard</b></div>
+							</a>							
 							<div class="tag-sale">
 								-66%		
 							</div>
-							<div><b>Giày Vans Slip-On Checkerboard</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>						
 							<div>SKU: VN000EYEBWW</div>
 							<div class="class4"><b>500.000đ</b></div>	
 							<del>1.450.000đ</del>
@@ -253,26 +280,31 @@
 					</div>
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000eyeblk-5.png?v=1552024468000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000eyeblk-5.png?v=1552024468000" alt="vans">	
+								<div><b>Giày Vans Slip-On Black White</b></div>
+							</a>
 							<div class="tag-sale">
 								-66%		
 							</div>
-							<div><b>Giày Vans Slip-On Black White</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>							
 							<div>SKU: VN000D3HBKA</div>
 							<div class="class4"><b>500.000đ</b></div>	
 							<del>1.450.000đ</del>
 						</article>
 					</div>
 				</div>
-				<br>
 				<div class="row">
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000ewzblk-5.png?v=1586254717000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000ewzblk-5.png?v=1586254717000" alt="vans">	
+								<div><b>Giày Vans Era Black White</b></div>
+							</a>							
 							<div class="tag-sale">
 								-66%		
 							</div>
-							<div><b>Giày Vans Era Black White</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>							
 							<div>SKU: VN000EWZBLK</div>
 							<div class="class4"><b>500.000đ</b></div>	
 							<del>1.450.000đ</del>
@@ -280,11 +312,14 @@
 					</div>
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a38frt8y-1.png?v=1558679097000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a38frt8y-1.png?v=1558679097000" alt="vans">	
+								<div><b>Giày Era Mix Match Parisian Night</b></div>
+							</a>							
 							<div class="tag-sale">
 								-40%		
 							</div>
-							<div><b>Giày Era Mix Match Parisian Night</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>							
 							<div>SKU: VN000EYEW00</div>
 							<div class="class4"><b>900.000đ</b></div>	
 							<del>1.500.000đ</del>
@@ -292,11 +327,14 @@
 					</div>
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000eyechr-1.png?v=1552026179000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000eyechr-1.png?v=1552026179000" alt="vans">	
+								<div><b>Giày Vans Slip-On Checker Grey</b></div>
+							</a>							
 							<div class="tag-sale">
 								-63%		
 							</div>
-							<div><b>Giày Vans Slip-On Checker Grey</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>							
 							<div>SKU: VN000EYEBWW</div>
 							<div class="class4"><b>500.000đ</b></div>	
 							<del>1.350.000đ</del>
@@ -304,11 +342,14 @@
 					</div>
 					<div class="col-md-3 col-12">
 						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000eyebpj-8.png?v=1567584270000" alt="vans">
+							<a href="#">
+								<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000eyebpj-8.png?v=1567584270000" alt="vans">	
+								<div><b>Giày Vans Slip-On Black/Pewter</b></div>
+							</a>
 							<div class="tag-sale">
 								-64%		
 							</div>
-							<div><b>Giày Vans Slip-On Black/Pewter</b></div>
+							<span class="badge badge-pill badge-success">SALE</span>
 							<div>SKU: VN000D3HBKA</div>
 							<div class="class4"><b>500.000đ</b></div>	
 							<del>1.400.000đ</del>
@@ -319,118 +360,147 @@
 
 			<!-- CONVERSE -->
 			<section>
-				<h2>CONVERSE</h2>
+				<h3>CONVERSE</h3>
 				<div class="row">
 					<div class="col-md-3">
-						<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_1_fashion.png?1587809913456" alt="converse">
+						<a href="#">
+							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_1_fashion.png?1587809913456" alt="converse">	
+						</a>	
 					</div>	
 					<div class="col-md-9">
 						<div class="row">
 							<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/567046v-2.png?v=1584807885000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/567046v-2.png?v=1584807885000" alt="converse">	
+										<div><b>Giày Converse Chuck Taylor All Star VLTG - Back to Earth</b></div>
+									</a>
+									
+									<div class="tag-sale">
+										-10%		
+									</div>
+									
+									<div>567046V</div>
+									<div class="class4"><b>1.440.000đ</b></div>	
+									<del>1.600.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck Taylor All Star VLTG - Back to Earth</b></div>
-							<div>567046V</div>
-							<div class="class4"><b>1.440.000đ</b></div>	
-							<del>1.600.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/566728v-6.png?v=1584802798000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/566728v-6.png?v=1584802798000" alt="converse">	
+										<div><b>Giày Converse Chuck Taylor All Star Precious Metals</b></div>
+									</a>
+									
+									<div class="tag-sale">
+										-10%		
+									</div>
+									
+									<div>SKU: 566728V</div>
+									<div class="class4"><b>1.440.000đ</b></div>	
+									<del>1.600.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck Taylor All Star Precious Metals</b></div>
-							<div>SKU: 566728V</div>
-							<div class="class4"><b>1.440.000đ</b></div>	
-							<del>1.600.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/167126c-1.jpg?v=1583692833000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/167126c-1.jpg?v=1583692833000" alt="converse">
+										<div><b>Giày Converse Chuck Taylor All Star Faux Leather Photon Dust</b></div>	
+									</a>
+									
+									<div class="tag-sale">
+										-10%		
+									</div>
+									
+									<div>SKU: 167126V</div>
+									<div class="class4"><b>1.260.000đ</b></div>	
+									<del>1.400.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck Taylor All Star Faux Leather Photon Dust</b></div>
-							<div>SKU: 167126V</div>
-							<div class="class4"><b>1.260.000đ</b></div>	
-							<del>1.400.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/167180v-5.jpg?v=1583771520000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/167180v-5.jpg?v=1583771520000" alt="converse">	
+										<div><b>Giày Converse Chuck Taylor All Star Camo Patch</b></div>
+									</a>
+									
+									<div class="tag-sale">
+										-10%		
+									</div>
+									
+									<div>SKU: 167180V</div>
+									<div class="class4"><b>1.350.000đ</b></div>	
+									<del>1.500.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck Taylor All Star Camo Patch</b></div>
-							<div>SKU: 167180V</div>
-							<div class="class4"><b>1.350.000đ</b></div>	
-							<del>1.500.000đ</del>
-						</article>
-					</div>
 						</div>
 					</div>	
 				</div>
 				<div class="row">
 					<div class="col-md-3">
-						<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_2_fashion.png?1587809913456" alt="converse">
+						<a href="#">
+							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_2_fashion.png?1587809913456" alt="converse">	
+						</a>		
 					</div>	
 					<div class="col-md-9">
 						<div class="row">
 							<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/567127-6.png?v=1584807547000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/567127-6.png?v=1584807547000" alt="converse">	
+										<div><b>Giày Converse Chuck Taylor All Star VLTG - Back to Earth</b></div>
+									</a>					
+									<div class="tag-sale">
+										-10%		
+									</div>
+									<div>567127V</div>
+									<div class="class4"><b>1.440.000đ</b></div>	
+									<del>1.600.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck Taylor All Star VLTG - Back to Earth</b></div>
-							<div>567127V</div>
-							<div class="class4"><b>1.440.000đ</b></div>	
-							<del>1.600.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/167183v-7.jpg?v=1583770007000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/167183v-7.jpg?v=1583770007000" alt="converse">	
+										<div><b>Giày Converse Chuck Taylor All Star Side Pocket</b></div>
+									</a>
+									<div class="tag-sale">
+										-10%		
+									</div>
+
+									<div>SKU: 167183V</div>
+									<div class="class4"><b>1.440.000đ</b></div>	
+									<del>1.600.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck Taylor All Star Side Pocket</b></div>
-							<div>SKU: 167183V</div>
-							<div class="class4"><b>1.440.000đ</b></div>	
-							<del>1.600.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/166815c-1.jpg?v=1583314817000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/166815c-1.jpg?v=1583314817000" alt="converse">	
+										<div><b>Giày Converse Chuck 70 Breaking Down Barriers "Knicks"</b></div>
+									</a>						
+									<div class="tag-sale">
+										-10%		
+									</div>
+									<div>SKU: 166815C </div>
+									<div class="class4"><b>1.980.000đ</b></div>	
+									<del>2.200.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck 70 Breaking Down Barriers "Knicks"</b></div>
-							<div>SKU: 166815C </div>
-							<div class="class4"><b>1.980.000đ</b></div>	
-							<del>2.200.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/166715c-1.jpg?v=1583774752000" alt="converse">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/166715c-1.jpg?v=1583774752000" alt="converse">	
+										<div><b>Giày Converse Chuck Taylor All Star Archival Camo</b></div>
+									</a>	
+									<div class="tag-sale">
+										-10%		
+									</div>							
+									<div>SKU: 166715C</div>
+									<div class="class4"><b>1.350.000đ</b></div>	
+									<del>1.500.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Converse Chuck Taylor All Star Archival Camo</b></div>
-							<div>SKU: 166715C</div>
-							<div class="class4"><b>1.350.000đ</b></div>	
-							<del>1.500.000đ</del>
-						</article>
-					</div>
 						</div>
 					</div>	
 				</div>
@@ -438,159 +508,180 @@
 
 			<!-- VANS -->
 			<section>
-				<h2>VANS</h2>
+				<h3>VANS</h3>
 				<div class="row">
 					<div class="col-md-9">
 						<div class="row">
 							<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a38g2mr4-4.jpg?v=1584263945000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a38g2mr4-4.jpg?v=1584263945000" alt="vans">	
+										<div><b>Giày Vans Old Skool 36 DX Anaheim Factory</b></div>
+									</a>
+									<div class="tag-sale">
+										-10%		
+									</div>									
+									<div>SKU: VN0A38G2MR4</div>
+									<div class="class4"><b>1.980.000đ</b></div>	
+									<del>2.200.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Old Skool 36 DX Anaheim Factory</b></div>
-							<div>SKU: VN0A38G2MR4</div>
-							<div class="class4"><b>1.980.000đ</b></div>	
-							<del>2.200.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4u39wyu-5.jpg?v=1584799998000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4u39wyu-5.jpg?v=1584799998000" alt="vans">	
+										<div><b>Giày Vans Era Deboss Checkerboard</b></div>
+									</a>					
+									<div class="tag-sale">
+										-10%		
+									</div>									
+									<div>SKU: VN0A4U39WYU</div>
+									<div class="class4"><b>1.530.000đ</b></div>	
+									<del>1.700.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Era Deboss Checkerboard</b></div>
-							<div>SKU: VN0A4U39WYU</div>
-							<div class="class4"><b>1.530.000đ</b></div>	
-							<del>1.700.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4bu6xw3-8.jpg?v=1581744749000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4bu6xw3-8.jpg?v=1581744749000" alt="vans">	
+										<div><b>Giày Vans Old Skool V Sport</b></div>
+									</a>									
+									<div class="tag-sale">
+										-10%		
+									</div>									
+									<div>SKU: VN0A4BU6XW3 </div>
+									<div class="class4"><b>1.800.000đ</b></div>	
+									<del>2.000.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Old Skool V Sport</b></div>
-							<div>SKU: VN0A4BU6XW3 </div>
-							<div class="class4"><b>1.800.000đ</b></div>	
-							<del>2.000.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4u38ws8-2.jpg?v=1584435245000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4u38ws8-2.jpg?v=1584435245000" alt="vans">
+										<div><b>Giày Vans Slip-On Mismatch</b></div>	
+									</a>									
+									<div class="tag-sale">
+										-10%		
+									</div>									
+									<div>SKU: VN0A4U38WS8</div>
+									<div class="class4"><b>1.440.000đ</b></div>	
+									<del>1.600.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Slip-On Mismatch</b></div>
-							<div>SKU: VN0A4U38WS8</div>
-							<div class="class4"><b>1.440.000đ</b></div>	
-							<del>1.600.000đ</del>
-						</article>
-					</div>
 						</div>
 					</div>	
 					<div class="col-md-3">
-						<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_1_electronic.png?1587809913456"  alt="vans">
+						<a href="#">
+							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_1_electronic.png?1587809913456"  alt="vans">	
+						</a>
 					</div>	
 				</div>
 				<div class="row">
 					<div class="col-md-9">
 						<div class="row">
 							<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a3dz3ws8-5.jpg?v=1584696428000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a3dz3ws8-5.jpg?v=1584696428000" alt="vans">
+										<div><b>Giày Vans Style 36 Mismatch</b></div>	
+									</a>								
+									<div class="tag-sale">
+										-10%		
+									</div>									
+									<div>SKU: VN000EWZBLK</div>
+									<div class="class4"><b>1.710.000đ</b></div>	
+									<del>1.900.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Style 36 Mismatch</b></div>
-							<div>SKU: VN000EWZBLK</div>
-							<div class="class4"><b>1.710.000đ</b></div>	
-							<del>1.900.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a38g2pxc-6.jpg?v=1584801503000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a38g2pxc-6.jpg?v=1584801503000" alt="vans">	
+										<div><b>Giày Vans Old Skool 36 DX Anaheim Factory</b></div>
+									</a>									
+									<div class="tag-sale">
+										-10%		
+									</div>									
+									<div>SKU: VN0A38G2MR4</div>
+									<div class="class4"><b>1.980.000đ</b></div>	
+									<del>2.200.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Old Skool 36 DX Anaheim Factory</b></div>
-							<div>SKU: VN0A38G2MR4</div>
-							<div class="class4"><b>1.980.000đ</b></div>	
-							<del>2.200.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4bu6xw2-7.jpg?v=1581745208000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4bu6xw2-7.jpg?v=1581745208000" alt="vans">	
+											<div><b>Giày Vans Old Skool V Sport</b></div>
+									</a>									
+									<div class="tag-sale">
+										-10%		
+									</div>								
+									<div>SKU: VN0A4BU6XW2</div>
+									<div class="class4"><b>1.800.000đ</b></div>	
+									<del>2.000.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Old Skool V Sport</b></div>
-							<div>SKU: VN0A4BU6XW2</div>
-							<div class="class4"><b>1.800.000đ</b></div>	
-							<del>2.000.000đ</del>
-						</article>
-					</div>
-					<div class="col-md-3 col-12">
-						<article class="class3">
-							<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000zd4y28-1.jpg?v=1584448630000" alt="vans">
-							<div class="tag-sale">
-								-10%		
+							<div class="col-md-3 col-12">
+								<article class="class3">
+									<a href="#">
+										<img src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn000zd4y28-1.jpg?v=1584448630000" alt="vans">	
+										<div><b>Giày Vans Old Skool Pro Black White</b></div>
+									</a>									
+									<div class="tag-sale">
+										-10%		
+									</div>
+									<div>SKU: VN000ZD4Y28</div>
+									<div class="class4"><b>1.575.000đ</b></div>	
+									<del>1.750.000đ</del>
+								</article>
 							</div>
-							<div><b>Giày Vans Old Skool Pro Black White</b></div>
-							<div>SKU: VN000ZD4Y28</div>
-							<div class="class4"><b>1.575.000đ</b></div>	
-							<del>1.750.000đ</del>
-						</article>
-					</div>
 						</div>
 					</div>
 					<div class="col-md-3">
-						<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_2_electronic.png?1587809913456"  alt="vans">
+						<a href="#">
+							<img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/banner_2_electronic.png?1587809913456"  alt="vans">	
+						</a>
+						
 					</div>							
 				</div>
 			</section>
 
 			<!-- Top Footer -->
 			<section>
-				<div class="row">
+				<div class="row" id="top_footer">
 					<div class="col-md-3">
 						<ul>
-							<li>GIỚI THIỆU</li>
-							<li>Trang chủ</li>
-							<li>Giới thiệu</li>
-							<li>Sản phẩm</li>
+							<li class="li_title">GIỚI THIỆU</li>
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Giới thiệu</a></li>
+							<li><a href="#">Sản phẩm</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul>
-							<li>CHÍNH SÁCH</li>
-							<li>Chính sách bảo mật</li>
-							<li>Chính sách vận chuyển</li>
-							<li>Chính sách đổi trả, bảo hành</li>
-							<li>Quy định sử dụng</li>
+							<li class="li_title">CHÍNH SÁCH</li>
+							<li><a href="#">Chính sách bảo mật</a></li>
+							<li><a href="#">Chính sách vận chuyển</a></li>
+							<li><a href="#">Chính sách đổi trả, bảo hành</a></li>
+							<li><a href="#">Quy định sử dụng</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul>
-							<li>HỖ TRỢ KHÁCH HÀNG</li>
-							<li>Kiểm tra đơn hàng</li>
-							<li>Đăng nhập</li>
-							<li>Đăng ký</li>
-							<li>Giỏ hàng</li>
+							<li class="li_title">HỖ TRỢ KHÁCH HÀNG</li>
+							<li><a href="#">Kiểm tra đơn hàng</a></li>
+							<li><a href="#">Đăng nhập</a></li>
+							<li><a href="#">Đăng ký</a></li>
+							<li><a href="#">Giỏ hàng</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">
 						<ul>
-							<li>CÔNG TY TNHH DỊCH VỤ & PHÁT TRIỂN THƯƠNG MẠI SONG PHONG</li>
-							<li>MST: 0108733154	</li>
-							<li>Địa chỉ: 462 Bạch Mai - Hai Bà Trưng - Hà Nội</li>
-							<li>Điện thoại: 02477702777 - 02436627666</li>
-							<li>Email: info@wear.com.vn</li>
+							<li class="li_title">CÔNG TY TNHH DỊCH VỤ & PHÁT TRIỂN THƯƠNG MẠI SONG PHONG</li>
+							<li class="info">MST: 0108733154	</li>
+							<li class="info">Địa chỉ: 462 Bạch Mai - Hai Bà Trưng - Hà Nội</li>
+							<li class="info">Điện thoại: 02477702777 - 02436627666</li>
+							<li class="info">Email: info@wear.com.vn</li>
 							<li><img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/boct_1.png?1587809913456" alt="img"></li>
 						</ul>
 					</div>
@@ -602,24 +693,24 @@
 				<div class="row">
 					<div class="col-md-4">
 						<ul>
-							<li>ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</li>
+							<li class="li_title mid_footer">ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</li>
 							<li>
-								<form method="get">
-									<input type="text" name="Email" placeholder="Nhập email của bạn">
-									<button>Đăng ký</button>
+								<form method="post">
+									<input type="text" name="Email" class="email" placeholder="Nhập email của bạn">
+									<button id="register" type="submit">Đăng ký</button>
 								</form>
 							</li>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<ul>
-							<li>PHƯƠNG THỨC THANH TOÁN</li>
+							<li class="li_title mid_footer">PHƯƠNG THỨC THANH TOÁN</li>
 							<li><img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/payment.png?1587809913456"></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<ul>
-							<li>KẾT NỐI VỚI CHÚNG TÔI</li>
+							<li class="li_title mid_footer">KẾT NỐI VỚI CHÚNG TÔI</li>
 							<li><img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/shopee.png?1587809913456"></li>
 							<li><img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/tiki.png?1587809913456"></li>
 						</ul>
@@ -628,7 +719,28 @@
 			</section>
 
 			<!-- Bottom Footer -->
-			<footer style="text-align: center;">© 2019 Bản quyền thuộc về Wear Vietnam</footer>
+			<footer>© 2019 Bản quyền thuộc về <b>Wear Vietnam</b></footer>
+
+
+			<!-- Go to top -->
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon">&#xe093;</span></button>
+			<script>
+			var mybutton = document.getElementById("myBtn");
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+			</script>
+
 		</div>
 	</body>
 </html>
