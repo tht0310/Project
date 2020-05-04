@@ -1,6 +1,6 @@
-.container-fluid {
+/*.container-fluid {
 	padding: 0px;
-}
+}*/
 
 .glyphicon {
 	color: white;
@@ -13,6 +13,37 @@
 .client:hover {
 	color: orange;
 	text-decoration: none;
+}
+
+.client:focus {
+	color: white;	
+	text-decoration: none;
+}
+
+.pic {
+	padding-left: 20px;
+	opacity: 1;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+.container:hover .pic {
+  opacity: 0.3;
+}
+.topPic {
+	padding: 20px 0px 30px 20px;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
 }
 
 a b {
@@ -101,10 +132,6 @@ header {
 	background-color: orange; font-weight: bold;	
 }
 
-#pictures {
-	padding: 50px 0px;
-}
-
 .navbar {
 	border-radius: 0px;
 	margin-bottom: 0px;
@@ -126,8 +153,8 @@ ul {
 
 .class3 {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-    padding: 15px;
     position: relative;
+    padding: 15px;
     margin-bottom: 30px;
 }
 
@@ -137,8 +164,8 @@ ul {
 }
 
 .class3 img {
-	width: 100%;
-	height: 95%;
+	width: 80%;
+	height: auto;
 }
 
 .class4 {
@@ -237,3 +264,4 @@ h3 {
 #myBtn:hover {
 	background-color: orange;
 }
+
