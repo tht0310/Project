@@ -7,9 +7,10 @@
 		<link rel="shortcut icon" type="image/png" href="https://scontent.fsgn5-1.fna.fbcdn.net/v/t1.0-9/67118951_1327303104102887_103790843940306944_n.png?_nc_cat=101&_nc_sid=85a577&_nc_ohc=x7C0uRr7IbAAX-CMLZH&_nc_ht=scontent.fsgn5-1.fna&oh=6a3179da1cb40b70d18f8a0936d03886&oe=5EC7B51E"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="index.css">
 
-
+		<script src="https://use.fontawesome.com/deed5bf1de.js"></script>
 		<script src="https://kit.fontawesome.com/yourcode.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -56,22 +57,16 @@
 							<li>
 								<ul class="inline-block">
 									<li>
-										<span class="glyphicon">&#xe182;</span>	
-									</li>
-									<li>
-										<div><a class="hotline client" href="tel:02477702777">02477702777</a></div>
-										<div class="pink">Hotline</div>	
+										<div class="pink"><span class="glyphicon">&#xe182;</span> Hotline</div>
+										<div><a class="hotline client" href="tel:02477702777">02477702777</a></div>											
 									</li>
 								</ul>
 							</li>
 							<li>
 								<ul class="inline-block">
 									<li>
-										<span class="glyphicon">&#xe116;</span>
-									</li>
-									<li>
+										<div class="pink"><span class="glyphicon">&#xe116;</span> Giỏ hàng</div>	
 										<div id="count"><a href="#" class="client">(0) Sản phẩm</a></div>
-										<div class="pink">Giỏ hàng</div>	
 									</li>
 								</ul>
 							</li>
@@ -197,14 +192,14 @@
 				    	</a>
 				    </div>
 				</div>
-			  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			  	<!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
 			  	</a>
 			  	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Next</span>
-			  	</a>
+			  	</a> -->
 			</div>
 
 			<!-- Pictures -->
@@ -844,8 +839,9 @@
 							<li class="li_title mid_footer">ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</li>
 							<li>
 								<form method="post">
-									<input type="text" name="Email" class="email" placeholder="Nhập email của bạn">
-									<button id="register" type="submit">Đăng ký</button>
+										<input type="text" name="Email" class="email" placeholder="Nhập email của bạn">
+										<button id="register" type="submit">Đăng ký</button>	
+									
 								</form>
 							</li>
 						</ul>
@@ -853,12 +849,19 @@
 					<div class="col-md-4">
 						<ul>
 							<li class="li_title mid_footer">PHƯƠNG THỨC THANH TOÁN</li>
-							<li><img src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/payment.png?1587809913456"></li>
+							<li><img class="center" src="https://bizweb.dktcdn.net/100/347/923/themes/742041/assets/payment.png?1587809913456"></li>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<ul>
 							<li class="li_title mid_footer">KẾT NỐI VỚI CHÚNG TÔI</li>
+							<ul class="inline-block sns">
+								<li><a href="#"><img src="https://cdn.clipart.email/d4bbe8537d0e6117ac322c0822fd3f23_circle-transparent-facebook-icon-png_851-860.png"></a></li>
+								<li><a href="#"><img src="https://toppng.com/uploads/preview/instagram-logo-circle-11549679754rhbcorxntv.png"></a></li>	
+								<li><a href="#"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/youtube-512.png"></a></li>	
+								<li><a href="#"><img src="http://bizweb.dktcdn.net/100/347/923/themes/742041/assets/shopee.png?1588667626840"></a></li>	
+								<li><a href="#"><img src="http://bizweb.dktcdn.net/100/347/923/themes/742041/assets/tiki.png?1588667626840"></a></li>		
+							</ul>
 						</ul>
 					</div>
 				</div>
@@ -870,21 +873,30 @@
 
 			<!-- Go to top -->
 			<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon">&#xe093;</span></button>
-			<script>
-			var mybutton = document.getElementById("myBtn");
-			window.onscroll = function() {scrollFunction()};
 
-			function scrollFunction() {
-			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			    mybutton.style.display = "block";
-			  } else {
-			    mybutton.style.display = "none";
-			  }
-			}
-			function topFunction() {
-			  document.body.scrollTop = 0;
-			  document.documentElement.scrollTop = 0;
-			}
+			<script>
+
+				//Go to top
+				var mybutton = document.getElementById("myBtn");
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+				  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				    mybutton.style.display = "block";
+				  } else {
+				    mybutton.style.display = "none";
+				  }
+				}
+				function topFunction() {
+				  document.body.scrollTop = 0;
+				  document.documentElement.scrollTop = 0;
+				}
+
+				//Carousel
+				$('.carousel').carousel({
+					interval: 2000
+				})
+
 			</script>
 
 		</div>
