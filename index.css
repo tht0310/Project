@@ -280,10 +280,6 @@ h3 {
 	border-radius: 5px;
 }
 
-.mid_footer {
-	padding-left: 50px;
-}
-
 #myBtn {
   display: none;
   position: fixed;
@@ -338,4 +334,21 @@ div h2 {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.mid_footer {
+	text-align: center;
+}
+
+.sns {
+	padding-left: 60px;   
+}
+
+.sns li a img {
+	height: 50px;
+	width: auto;
+}
+
+ul li form {
+	padding-left: 45px;
 }
