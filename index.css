@@ -43,7 +43,7 @@
 }
 
 .img-hover-zoom:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 a b {
@@ -129,7 +129,9 @@ header {
 }
 
 .mainMenu {
-	background-color: orange; font-weight: bold;	
+	background-color: orange;
+	color: white;
+	font-family: sans-serif;
 }
 
 .navbar {
@@ -142,9 +144,21 @@ header {
 .dropdown-item {
 	padding: 10px;
 }
+.dropdown-toggle {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-item:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu  {
+  display: block;
+}
 
 body {
-	font-family: Roboto;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 ul {
@@ -164,7 +178,7 @@ ul {
 }
 
 .class3 img {
-	width: 80%;
+	width: 100%;
 	height: auto;
 }
 
@@ -351,4 +365,15 @@ div h2 {
 
 ul li form {
 	padding-left: 45px;
+
 }
+
+#top_footer {
+	margin-top: 30px;
+}
+
+.mid_footer {
+	margin-top: 50px;
+}
+
+
