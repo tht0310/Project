@@ -1,5 +1,6 @@
 /*.container-fluid {
-	padding: 0px;
+	width: 100%;
+	height: auto;
 }*/
 
 .glyphicon {
@@ -125,7 +126,7 @@ header {
 }
 
 .nav-link {
-	margin: 0px 20px;
+	margin: 0px 15px;
 }
 
 .mainMenu {
