@@ -101,7 +101,6 @@
 						<li class="sub-menu-item"><a href="javascript:void(0)">SK8-HI</a></li>
 						<li class="sub-menu-item"><a href="javascript:void(0)">SLIP-ON</a></li>
 						<li class="sub-menu-item"><a href="javascript:void(0)">ERA</a></li>
-						<li class="sub-menu-item"><a href="javascript:void(0)">VAULT</a></li>
 						<li class="sub-menu-item"><a href="javascript:void(0)">ACCESSORIES</a></li>
 						<li class="sub-menu-item"><a href="javascript:void(0)">APPAREL</a></li>
 					</ul
@@ -697,9 +696,9 @@
 				interval: 2000
 			})
 
-			//
-			$(".menu").click(function() {
-				$(this).toggleClass("responsive");				
+			//Toggle
+			$("#bar").click(function() {
+				$(this).parent().parent().toggleClass("responsive");				
 			});
 		</script>
 	</body>
